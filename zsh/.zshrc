@@ -82,14 +82,12 @@ alias n="neofetch"
 alias cat="bat"
 alias sudo="sudo -E"
 alias ra='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
-alias tim="deepin-tim"
 alias lz="lazygit"
 alias cpu="top -bn 1 -i -c | grep Cpu"
 alias vol+="pactl set-sink-volume alsa_output.pci-0000_00_1f.3.analog-stereo +10%"
 alias vol-="pactl set-sink-volume alsa_output.pci-0000_00_1f.3.analog-stereo -10%"
-alias vpn="sh ~/Desktop/openvpn/startvpn.sh"
-alias voff="sudo ipsec down strongvpn"
 alias vim="nvim"
+alias p="proxychains"
 # End
 
 source $ZSH/oh-my-zsh.sh
@@ -120,3 +118,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export GPG_TTY=$(tty)
+
+PATH="/home/xrz/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/xrz/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/xrz/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/xrz/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/xrz/perl5"; export PERL_MM_OPT;
