@@ -82,6 +82,7 @@ alias n="neofetch"
 alias cat="bat"
 alias sudo="sudo -E"
 alias ra='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+alias tim="deepin-tim"
 alias lz="lazygit"
 alias cpu="top -bn 1 -i -c | grep Cpu"
 alias vol+="pactl set-sink-volume alsa_output.pci-0000_00_1f.3.analog-stereo +10%"
